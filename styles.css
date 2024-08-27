@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    background-color: #c2602f;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hamburger-menu {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 24px;
+    margin-left: 20px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px; /* Adjust the size as needed */
+    font-weight: bold;
+    animation: float 3s ease-in-out infinite; /* 3s duration, infinite loop */
+}
+
+nav {
+    display: none;
+    background-color: #333;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+    z-index: 100;
+}
+
+nav a:hover {
+    background-color: #444;
+}
+
+main {
+    padding-top: 80px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+/*fonts*/
+.Name { 
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    font-size: 35px;
+}
+
+.content-text{
+    text-align: justify;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at the original position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move up 10px at the midpoint */
+    }
+}
+
+/* Profile Section Styles */
+#section1 {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #8c7f79;
+    width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    max-width: 150px;
+    height: auto;
+}
+
+.profile-description {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.profile-description h2 {
+    margin-top: 0;
+}
+
+.profile-description p {
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-bottom: 20px;
+    }
+
+    .profile-description {
+        margin-left: 0;
+    }
+}
+
+ul.stylish-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    z-index: 1;
+}
+
+ul.stylish-list li {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+ul.stylish-list li i {
+    color: #3498db;
+    margin-right: 10px;
+    z-index: 1;
+}
+
+ul.stylish-list li:hover {
+    background-color: #e9ecef;
+    z-index: 1;
+}
+
+/*Skill section*/
+.section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.chart-container {
+    width: 100%;
+    max-width: 500px; /* Adjust max width as needed */
+    margin: 0 auto;
+}
+/*Contact section*/
+.section3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+.subbox{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 390px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.subbox label{
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+}
+.subbox input[type="nama"], .subbox input[type="jurusan"], .subbox input[type="phone"], .subbox textarea{
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.subbox input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.subbox input[type="submit"]:hover {
+    background-color: #218838;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=New+Amsterdam&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="hamburger-menu" onclick="toggleNav()">
+                &#9776;
+            </div>
+            <div class="logo">A.H.A</div>
+        </div>
+    </header>
+
+    <nav id="mobile-nav">
+        <a href="#section1" onclick="closeNav()" class="fas fa-user">Profile</a>
+        <br>
+        <a href="#section2" onclick="closeNav()" class="fas fa-camera">Skill</a>
+        <br>
+        <a href="#section3" onclick="closeNav()" class="fas fa-phone">Contact</a>
+    </nav>
+
+    <main>
+        <section id="section1">
+            <div class="profile-container">
+                <div class="profile-image">
+                    <img src="img/pfp.png" alt="Profile Image">
+                </div>
+                <div class="profile-description">
+                    <h2 class="Name">AHMAD HUSEIN<span style="color: #c2602f;">AL HAFIZ</span></h2>
+                    <p class="content-text"></p>Beginner level in programming, photograph, and media editor (video and photo). I like to listen for some music, plays some games, and do such a lot of things on internet that interest me.</p>
+                </div>
+            </div>
+            <p class="content-text">Hai saya Ahmad Husein Al Hafiz, saya merupakan murid dari SMK TRIMULIA JAKARTA dan juga bagian dari ekstrakulikuler IT Club di SMK TRIMULIA.
+                Saya suka membuat projek dalam bidang fotografi, bahasa pemrograman, dan juga IoT (Internet Of Things). 
+                Hobi yang saya suka lakukan dalam kegiatan luang yaitu mendengarkan musik, bermain game, dan menjelajahi segala apa yang ada dalam internet.
+            </p>
+            <ul class="stylish-list">
+                <li><i class="fas fa-question-circle"></i> Umur: ???</li>
+                <li><i class="fas fa-graduation-cap"></i> Pendidikan: Sekolah Menengah Kejuruan</li>
+                <li><i class="fas fa-user"></i> Status: Anak didik atau murid SMK TRIMULIA</li>
+                <li><i class="fas fa-camera"></i> Skill: fotografi, pemrograman, serta media editor</li>
+            </ul>
+
+        </section>
+        <section id="section2">
+            <h2>Skill based on data</h2>
+            <div class="chart-container">
+            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+            </div>
+        </section>
+        <section id="section3">
+            <div class="subbox">
+            <h2>Contact me!</h2>
+            <form action="https://formspree.io/f/mqaznqnb" method="POST">
+                <label for="nama">Name:</label>
+                <input type="nama" id="nama" name="nama" required><br><br>
+        
+                <label for="phone">Email:</label>
+                <input type="phone" id="phone" name="phone" required><br><br>
+            
+                <label for="pesan">Message:</label><br>
+                <textarea id="pesan" name="pesan" required></textarea><br><br>
+            
+                <input type="submit" value="Send">
+            </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
